@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal webpage!</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#form">Contact Form</a>
+    </nav>
+
+    <section id="profile">
+        <h2>Personal Information</h2>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>21</td>
+                <td>University Student</td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td colspan="2">Playing Games</td>
+            </tr>
+        </table>
+    </section>
+
+    <article id="form">
+        <h2>Personal Information Form</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <p>Favorite Hobbies:</p>
+
+            <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+            <label for="gaming">Gaming</label>
+
+            <input type="checkbox" id="music" name="hobby" value="Music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="reading" name="hobby" value="Reading">
+            <label for="reading">Reading</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </article>
+
+    <footer>
+        <p>&copy; 2026 My Personal Profile</p>
+    </footer>
+
+</body>
+</html>
