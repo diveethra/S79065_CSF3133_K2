@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Header: Event name and tagline -->
+    <header>
+        <h1>Programming Workshop 2026</h1>
+    </header>
+
+    <!-- Navigation: Links to different sections of the page -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- Section 1: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>
+            The Programming Workshop 2026 is a one-day event organised
+            by the Faculty of Computing to help students improve their
+            programming skills, explore new technologies and learn from
+            experienced speakers.
+        </p>
+
+        <!-- Article 1: Introduction to the first speaker -->
+        <article>
+            <h3>Speaker 1: Dr. Ahmad Rahman</h3>
+            <p>
+                Dr. Ahmad Rahman is a software engineer and lecturer
+                specialising in web development. He will introduce
+                students to HTML fundamentals and website creation.
+            </p>
+        </article>
+
+        <!-- Article 2: Introduction to the second speaker and activity -->
+        <article>
+            <h3>Speaker 2: Ms. Nur Aina</h3>
+            <p>
+                Ms. Nur Aina is an experienced application developer.
+                She will conduct a hands-on programming session where
+                students can practise problem-solving and coding.
+            </p>
+        </article>
+    </section>
+
+    <!-- Section 2: Event Schedule -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <!-- Table showing the activities from morning to evening -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>8:00 AM - 8:30 AM</td>
+                    <td>Registration and Breakfast</td>
+                    <td rowspan="2">Computer Lab 1</td>
+                    <td>Organising Committee</td>
+                </tr>
+
+                <tr>
+                    <td>8:30 AM - 10:00 AM</td>
+                    <td>Introduction to HTML</td>
+                    <td>Dr. Ahmad Rahman</td>
+                </tr>
+
+                <tr>
+                    <td>10:00 AM - 10:30 AM</td>
+                    <td>Morning Tea Break</td>
+                    <td colspan="2">Faculty Cafeteria</td>
+                </tr>
+
+                <tr>
+                    <td>10:30 AM - 12:00 PM</td>
+                    <td>Hands-on Web Development</td>
+                    <td>Computer Lab 2</td>
+                    <td>Ms. Nur Aina</td>
+                </tr>
+
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td colspan="1">Lunch Break</td>
+                    <td colspan="2">Faculty Cafeteria</td>
+                </tr>
+
+                <tr>
+                    <td>1:00 PM - 2:30 PM</td>
+                    <td>Programming Challenge</td>
+                    <td>Computer Lab 1</td>
+                    <td>Mr. Daniel Lee</td>
+                </tr>
+
+                <tr>
+                    <td>2:30 PM - 3:00 PM</td>
+                    <td>Afternoon Tea Break</td>
+                    <td>Faculty Cafeteria</td>
+                    <td>Organising Committee</td>
+                </tr>
+
+                <tr>
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>Team Project and Presentation</td>
+                    <td>Seminar Room</td>
+                    <td>Ms. Nur Aina</td>
+                </tr>
+
+                <tr>
+                    <td>4:30 PM - 5:00 PM</td>
+                    <td>Closing Ceremony and Certificates</td>
+                    <td>Seminar Room</td>
+                    <td>Faculty Dean</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Registration Form -->
+    <section id="register">
+        <h2>Student Registration</h2>
+        <p>Fill in the form below to register for the workshop.</p>
+
+        <!-- Form collects student information and session preferences -->
+        <form action="register.html" method="post">
+
+            <!-- Text input for student's full name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <!-- Text input for student's matriculation number -->
+            <label for="matric">Matric Number:</label>
+            <input type="text" id="matric" name="matric" required>
+            <br><br>
+
+            <!-- Email input for student's email address -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Radio buttons: Select only one year of study -->
+            <p>Year of Study:</p>
+
+            <input type="radio" id="year1" name="year" value="Year 1" required>
+            <label for="year1">Year 1</label>
+            <br>
+
+            <input type="radio" id="year2" name="year" value="Year 2">
+            <label for="year2">Year 2</label>
+            <br>
+
+            <input type="radio" id="year3" name="year" value="Year 3">
+            <label for="year3">Year 3</label>
+            <br>
+
+            <input type="radio" id="year4" name="year" value="Year 4">
+            <label for="year4">Year 4</label>
+            <br><br>
+
+            <!-- Checkboxes: Students may select multiple sessions -->
+            <p>Sessions You Want to Join:</p>
+
+            <input type="checkbox" id="html" name="sessions[]" value="HTML">
+            <label for="html">Introduction to HTML</label>
+            <br>
+
+            <input type="checkbox" id="webdev" name="sessions[]" value="Web Development">
+            <label for="webdev">Hands-on Web Development</label>
+            <br>
+
+            <input type="checkbox" id="challenge" name="sessions[]" value="Programming Challenge">
+            <label for="challenge">Programming Challenge</label>
+            <br>
+
+            <input type="checkbox" id="project" name="sessions[]" value="Team Project">
+            <label for="project">Team Project and Presentation</label>
+            <br><br>
+
+            <!-- Drop-down list: Select programme or faculty -->
+            <label for="programme">Programme or Faculty:</label>
+            <select id="programme" name="programme" required>
+                <option value="">-- Select Programme --</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Information Systems">Information Systems</option>
+                <option value="Multimedia Computing">Multimedia Computing</option>
+            </select>
+            <br><br>
+
+            <!-- Submit button: Sends the registration form -->
+            <input type="submit" value="Register Now">
+
+        </form>
+    </section>
+
+    <!-- Footer: Organiser information and copyright -->
+    <footer>
+        <p>Organised by the Faculty of Computing</p>
+        <p>&copy; 2026 Faculty of Computing. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
