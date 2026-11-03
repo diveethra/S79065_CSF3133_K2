@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #2874a6;
+            color: white;
+            padding: 20px;
+        }
+
+        header span {
+            color: yellow;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #2874a6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .calculator {
+            background-color: #eaf2f8;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        output {
+            font-weight: bold;
+            color: blue;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2874a6;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header Section -->
+    <div class="header">
+        <header>
+            <h1>Contact Us</h1>
+            <p><span>We are always happy to hear from you!</span></p>
+        </header>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Contact Form -->
+        <h2>Contact Form</h2>
+
+        <form>
+            <label>Email Address:</label><br>
+            <input type="email" name="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <label>Preferred Contact Date:</label><br>
+            <input type="date" name="contactDate" required>
+            <br><br>
+
+            <label>Satisfaction Level:</label><br>
+            <input type="range" name="satisfaction"
+                   min="1" max="10" value="5">
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr>
+
+        <!-- Inline Calculator -->
+        <div class="calculator">
+
+            <h2>Simple Calculator</h2>
+
+            <label>First Number:</label><br>
+            <input type="number" id="num1" value="0">
+            <br>
+
+            <label>Second Number:</label><br>
+            <input type="number" id="num2" value="0">
+            <br><br>
+
+            <button type="button" onclick="calculateSum()">
+                Calculate Sum
+            </button>
+
+            <p>Total: <output id="result">0</output></p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <footer>
+            <p>&copy; 2026 Contact Us Website</p>
+            <p>Email: contact@example.com</p>
+        </footer>
+    </div>
+
+</div>
+
+<script>
+    function calculateSum() {
+
+        let number1 = Number(document.getElementById("num1").value);
+
+        let number2 = Number(document.getElementById("num2").value);
+
+        let sum = number1 + number2;
+
+        document.getElementById("result").value = sum;
+    }
+</script>
+
+</body>
+</html>
