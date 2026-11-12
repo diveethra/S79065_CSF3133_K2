@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Main heading of the café website -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation bar with links to each section -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu section displaying food and drink promotions -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <!-- First menu item with promotional price -->
+        <article id="item1">
+            <h3>Kopi Tarik</h3>
+            <p>
+                <span class="old-price">RM 4.50</span>
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <!-- Second menu item with promotional price -->
+        <article id="item2">
+            <h3>Nasi Lemak</h3>
+            <p>
+                <span class="old-price">RM 6.50</span>
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+    </section>
+
+    <!-- Video section with a caption -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover the delicious food and drinks at e-Café Campus!
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback section containing a customer feedback form -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <!-- Name input field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email input field -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Radio buttons for visit type -->
+            <p>Visit Type:</p>
+
+            <input type="radio" id="dinein" name="visit"
+                   value="Dine-in" required>
+            <label for="dinein">Dine-in</label>
+
+            <input type="radio" id="takeaway" name="visit"
+                   value="Take-away">
+            <label for="takeaway">Take-away</label>
+
+            <!-- Checkboxes for favourite menu items -->
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" id="kopi" name="favourite"
+                   value="Kopi Tarik">
+            <label for="kopi">Kopi Tarik</label>
+
+            <input type="checkbox" id="nasi" name="favourite"
+                   value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+
+            <input type="checkbox" id="tea" name="favourite"
+                   value="Teh Tarik">
+            <label for="tea">Teh Tarik</label>
+
+            <!-- Submit button for the feedback form -->
+            <br><br>
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </section>
+
+    <!-- Footer section with café contact information -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <!-- Address and email contact -->
+        <address>
+            Contact us:
+            <a href="mailto:ecafecampus@gmail.com">
+                ecafecampus@gmail.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>

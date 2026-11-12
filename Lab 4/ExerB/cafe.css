@@ -1,0 +1,123 @@
+
+/* =====================================
+   Navigation Bar Styling
+   ===================================== */
+
+/* Remove default list bullets and spacing */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b79783;
+    overflow: hidden;
+}
+
+/* Display navigation links as blocks */
+nav li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Change background colour when hovering */
+nav li a:hover {
+    background-color: #ebd6d6;
+    color: white;
+}
+
+
+/* =====================================
+   Promotional Price Styling
+   ===================================== */
+
+/* Cross out the original price */
+.old-price {
+    text-decoration: line-through;
+    color: #777777;
+    margin-right: 8px;
+}
+
+
+/* =====================================
+   Responsive Video Styling
+   ===================================== */
+
+/* Make video responsive on different screen sizes */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the video caption */
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 8px;
+}
+
+
+/* =====================================
+   Customer Feedback Form Styling
+   ===================================== */
+
+/* Style the feedback form container */
+.feedback-form {
+    max-width: 450px;
+    padding: 20px;
+    background-color: #FDEBD0;
+    border-radius: 8px;
+}
+
+/* Style text and email input fields */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+/* Style form labels */
+.feedback-form label {
+    color: #333333;
+}
+
+/* Style submit button */
+.feedback-form button {
+    background-color: #1A5276;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button colour when hovering */
+.feedback-form button:hover {
+    background-color: #ebd6d6;
+}
+
+
+/* =====================================
+   Footer Contact Styling
+   ===================================== */
+
+/* Style the email address */
+footer address {
+    font-style: normal;
+    margin: 10px 0;
+}
+
+footer address a {
+    color: #1A5276;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}

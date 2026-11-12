@@ -1,0 +1,92 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+    Error 1 (Line 9): Invalid list-style-type value.
+    Corrected to none in CSS.
+
+    Error 2 (Line 17): Invalid text-decoration value.
+    Corrected to overline in CSS.
+
+    Error 3 (Line 18): Missing colon after color.
+    Corrected in CSS.
+
+    Error 4 (Line 19): Incorrect selector #intro.
+    Corrected to .intro in CSS.
+
+    Error 5 (Line 22): Missing closing brace.
+    Corrected in CSS.
+
+    Error 6 (Line 22): Missing class selector for highlight.
+    Corrected to .highlight in CSS.
+
+    Error 7 (Line 34): Incorrect menu link.
+    Corrected to href="#menu".
+
+    Error 8 (Lines 42 and 46): Duplicate article IDs.
+    Changed to item1 and item2.
+
+    Error 9 (Line 54): Incorrect video MIME type.
+    Corrected to video/mp4.
+
+    Error 10 (Line 53): Missing video controls.
+    Added controls attribute.
+    -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article id="item1">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="highlight">RM 3.50</span></p>
+        </article>
+
+        <article id="item2">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+
+</body>
+</html>

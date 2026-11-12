@@ -1,0 +1,47 @@
+
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link colours */
+a:link {
+    color: #1A5276;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Heading with line above */
+h1 {
+    text-decoration: overline;
+}
+
+/* Paragraph styling */
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+/* Introduction paragraph */
+.intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+}
+
+/* Highlighted prices */
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
