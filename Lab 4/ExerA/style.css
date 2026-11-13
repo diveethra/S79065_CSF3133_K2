@@ -1,0 +1,283 @@
+
+
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f7;
+    color: #333333;
+}
+
+
+/* Header Styling */
+header {
+    background-color: #087e8b;
+    padding: 35px;
+    text-align: center;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #064b50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+    background-color: #20a39e;
+    color: white;
+}
+
+
+/* Link States */
+a:link {
+    color: #007b83;
+}
+
+a:visited {
+    color: #7040a0;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+a:active {
+    color: red;
+}
+
+
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+
+/* ID Selectors */
+#destinations {
+    background-color: #e0f2ef;
+    text-align: center;
+}
+
+#video {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#trip {
+    background-color: #e0f2ef;
+    text-align: center;
+}
+
+
+/* Heading Styling */
+h2 {
+    color: #087e8b;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #087e8b;
+}
+
+
+/* Class Selectors */
+.center {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Destination Cards */
+.destination-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #20a39e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Promotion Price */
+.price {
+    font-size: 20px;
+}
+
+.price del {
+    color: #888888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.price strong {
+    color: #e67e22;
+}
+
+
+/* Trip Seat Meter */
+.seat {
+    margin: 30px auto;
+    text-align: center;
+}
+
+meter {
+    width: 80%;
+    height: 25px;
+}
+
+
+/* Video Styling */
+video {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #087e8b;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 20px auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555555;
+}
+
+
+/* Form Styling */
+.trip-form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #20a39e;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.trip-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio and Checkbox */
+.trip-form input[type="radio"],
+.trip-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+/* Submit Button */
+.trip-form button {
+    background-color: #087e8b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.trip-form button:hover {
+    background-color: #064b50;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #064b50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer address {
+    font-style: normal;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .trip-form {
+        width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
