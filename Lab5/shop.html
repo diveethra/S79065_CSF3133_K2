@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts: Roboto and Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <!--
+    ERROR LIST (Original Given Code)
+
+    Error 1 (shop.html, Line 1): Incorrect DOCTYPE declaration.
+    Error 2 (shop.html, Line 7): Incorrect rel value "stylesheets".
+    Error 3 (shop.html, Lines 10-12): Internal CSS placed inside body.
+    Error 4 (shop.html, Line 18): Incorrect inline CSS syntax, uses = instead of :.
+    Error 5 (shop.html, Line 20): Table ID is "product" but CSS uses "products".
+    Error 6 (shop.html, Line 22): Missing closing </td> for Category.
+    Error 7 (shop.html, Line 23): Missing closing </td> for Category.
+    Error 8 (shop.html, Line 24): Missing closing </td> for Category.
+    Error 9 (shop.html, Line 25): Missing closing </td> for Category.
+    Error 10 (shop.css, Line 2): Incorrect font name "Robotto".
+    Error 11 (shop.css, Line 34): nth-child(2) only selects the second row, not every even row.
+    Error 12 (shop.css, Line 37): Incorrect pseudo-class :hovered.
+    Error 13 (shop.css, Line 45): Missing semicolon after background-color.
+    -->
+
+    <!-- HEADER -->
+    <header>
+        <h1>Campus Bookstore</h1>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="home">
+
+        <h2>Welcome to Campus Bookstore</h2>
+
+        <p>
+            Textbooks, stationery and more for every student.
+        </p>
+
+        <h2 id="books">Our Products</h2>
+
+        <table id="products">
+
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td class="price">45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td class="price">6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td class="price">25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td class="price">9.90</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        &copy; 2026 Campus Bookstore
+    </footer>
+
+</body>
+</html>

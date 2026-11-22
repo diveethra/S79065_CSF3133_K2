@@ -1,0 +1,151 @@
+/* =====================================
+   1. BODY AND BACKGROUND
+   ===================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   2. HEADER
+   ===================================== */
+
+header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('paper.gif');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Heading font */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+/* =====================================
+   3. NAVIGATION MENU
+   ===================================== */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Display menu horizontally */
+nav li {
+    float: left;
+}
+
+/* Menu links */
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Hover effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active Home link */
+nav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* =====================================
+   4. MAIN CONTENT
+   ===================================== */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #1B4F72;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   5. PRODUCT TABLE
+   ===================================== */
+
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table borders and padding */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+/* Table heading */
+#products th {
+    background-color: #4A4A6D;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Even rows have grey background */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table hover effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Price column aligned to the right */
+#products td.price {
+    text-align: right;
+}
+
+
+/* =====================================
+   6. FOOTER
+   ===================================== */
+
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
